@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/grid-form.css">
+
+    <title>Entre em contato</title>
+</head>
+
+<body>
+    <div class="container-grid">
+        <header>
+            <div class="img-logo">
+               <a href="../assets/grid.homepage.html">
+                   <img src="../img/petsintonia-logo.png" alt="Pet Sintonia Logo">
+               </a> 
+            </div>
+            <div class="nav-bar">
+                <nav>
+                    <ul class="menu-list">
+                        <li><a href="../assets/grid.homepage.html">Home</a></li>
+                        <li><a href="../assets/adocao.html">Adoção</a></li>
+                        <li><a href="../assets/forms.html">Entre em contato</a></li>
+                    </ul>
+                    <div class="menu-mobile-icon">
+                        <button onclick="menuShow()">
+                            <img class="menu-icon" src="../img/bars-solid.svg" alt="">
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="sec-01">
+                <h2>Entre em contato</h2>
+                <img class="banner-img" src="../img/pets-contato.png" alt="Banner">
+            </section>
+
+            <section class="sec-02">
+                <div class="form-section">
+                    <form id="form">
+                        <h2>Quero adotar</h2>
+                        <div class="form-content">
+                            <label for="nome">Nome Completo:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                            <a>*Obrigatório</a>
+                            <span class="erro" id="erro-nome"></span>
+                        </div>
+                        <div class="form-content">
+                            <label for="tell">Telefone:</label>
+                            <input type="text" id="tell" name="tell" placeholder="Seu telefone">
+                            <a>*Obrigatório</a>
+                            <span class="erro" id="erro-tell"></span>
+                        </div>
+                        <div class="form-content">
+                            <label for="cep">CEP:</label>
+                            <input type="text" id="cep" name="cep" placeholder="CEP">
+                            <a>*Obrigatório</a>
+                            <span class="erro" id="erro-cep"></span>
+                        </div>
+                        <div class="form-content">
+                            <label for="endereco">Endereço:</label>
+                            <input type="text" id="endereco" name="endereco" placeholder="Seu endereço">
+                            <a>*Obrigatório</a>
+                            <span class="erro" id="erro-endereco"></span>
+                        </div>
+                        <div class="form-content">
+                            <label for="numero">Número:</label>
+                            <input type="text" id="numero" name="numero" placeholder="Seu número"><br>
+                            <a>*Obrigatório</a>
+                            <span class="erro" id="erro-numero"></span>
+                        </div>
+                        <div class="form-content2">
+                            <label for="pet">Qual espécie de pet você deseja adotar (cachorro ou gato)?</label>
+                            <select id="pet" name="pet">
+                                <option value="cachorro">Cachorro</option>
+                                <option value="gato">Gato</option>
+                            </select>
+                            <label for="visita">Você está disposto a participar de uma visita domiciliar se necessário?</label>
+                            <input type="radio" id="visita-sim" name="visita" value="sim">
+                            <label for="visita-sim">Sim</label>
+                            <input type="radio" id="visita-nao" name="visita" value="nao">
+                            <label for="visita-nao">Não</label>
+                        </div>
+                        <div class="form-content">
+                            <label for="adotar">Por que você quer adotar?</label>
+                            <textarea id="adotar" name="adotar" placeholder="Justifique"></textarea>
+                            <a>*Obrigatório</a>
+                            <span class="erro" id="erro-adotar"></span>
+                        </div>
+                        <div class="enviar-form">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>                 
+                </div>
+                <img class="img-01" src="../img/gato-contato.jpg" alt="Gato fundo azul">
+                <img class="img-02" src="../img/cachorro-contato.jpg" alt="Cachorro fundo verde">
+            </section>
+        </main>
+
+        <footer>
+            <p>@2024 - COPYRIGHT</p>
+        </footer>
+    </div>
+
+    <script src="../js/pages.js"></script>
+</body>
+
+</html>
